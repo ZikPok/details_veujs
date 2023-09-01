@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Jost&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="lines center">
+    <svg width="1" height="3145" viewBox="0 0 1 3145" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <line x1="0.500122" y1="7.48501e-08" x2="0.500082" y2="3144.64" stroke="#E6E6E6" />
+    </svg>
+    <svg width="1" height="3145" viewBox="0 0 1 3145" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <line x1="0.500122" y1="7.48501e-08" x2="0.500082" y2="3144.64" stroke="#E6E6E6" />
+    </svg>
+    <svg width="1" height="3145" viewBox="0 0 1 3145" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <line x1="0.500122" y1="7.48501e-08" x2="0.500082" y2="3144.64" stroke="#E6E6E6" />
+    </svg>
+    <svg width="1" height="3145" viewBox="0 0 1 3145" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <line x1="0.500122" y1="7.48501e-08" x2="0.500082" y2="3144.64" stroke="#E6E6E6" />
+    </svg>
+
+  </div>
+
+
+  <div id="app" class="main center">
+    <div class="header center">
+      <div class="header__left">
+        <div class="header__left_logo">
+          <a href="#" class=""><svg class="logo" width="34" height="34" viewBox="0 0 34 34" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 34.0003H13.4588V24.499C13.4588 22.4853 15.0898 20.8543 17.1035 20.8543C19.1172 20.8543 20.7482 22.4853 20.7482 24.499V34.0003H33.9975V0C15.2211 0 0 15.2211 0 34.0003Z"
+                fill="#CDA274" />
+            </svg></a>
+        </div>
+
+
+        <div class="header__left_text">Interno</div>
+      </div>
+      <div class="header__right">
+        <a href="#" class="header__right_link">Home</a>
+        <a href="#" class="header__right_link">Project</a>
+        <a href="#" class="header__right_link">Blog</a>
+      </div>
+    </div>
+
+
+    <div class="banner ">
+      <img src="img/banner.jpg" alt="banner">
+    </div>
+
+    <div class="details">
+      <div id="app" class="blog__list">
+        <blog-list></blog-list>
+      </div>
+    </div>
+
+
+    <div class="footer center">
+      <div class="interno">
+        <div class="interno__head">
+          <div class="interno_logo">
+            <a href="#" class=""><svg class="logo" width="34" height="34" viewBox="0 0 34 34" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0 34.0003H13.4588V24.499C13.4588 22.4853 15.0898 20.8543 17.1035 20.8543C19.1172 20.8543 20.7482 22.4853 20.7482 24.499V34.0003H33.9975V0C15.2211 0 0 15.2211 0 34.0003Z"
+                  fill="#CDA274" />
+              </svg>
+            </a>
+          </div>
+          <div class="interno_text footer__text">Interno</div>
+        </div>
+        <span class="interno__span">It is a long established fact that a reader will be distracted lookings.</span>
+        <div class="interno__icon">
+          <svg class="interno__icon_tweet" width="19" height="16" viewBox="0 0 19 16" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M16.6367 4.59375C16.6367 4.76953 16.6367 4.91016 16.6367 5.08594C16.6367 9.97266 12.9453 15.5625 6.16016 15.5625C4.05078 15.5625 2.11719 14.9648 0.5 13.9102C0.78125 13.9453 1.0625 13.9805 1.37891 13.9805C3.10156 13.9805 4.68359 13.3828 5.94922 12.3984C4.33203 12.3633 2.96094 11.3086 2.50391 9.83203C2.75 9.86719 2.96094 9.90234 3.20703 9.90234C3.52344 9.90234 3.875 9.83203 4.15625 9.76172C2.46875 9.41016 1.20312 7.93359 1.20312 6.14062V6.10547C1.69531 6.38672 2.29297 6.52734 2.89062 6.5625C1.87109 5.89453 1.23828 4.76953 1.23828 3.50391C1.23828 2.80078 1.41406 2.16797 1.73047 1.64062C3.55859 3.85547 6.30078 5.33203 9.35938 5.50781C9.28906 5.22656 9.25391 4.94531 9.25391 4.66406C9.25391 2.625 10.9062 0.972656 12.9453 0.972656C14 0.972656 14.9492 1.39453 15.6523 2.13281C16.4609 1.95703 17.2695 1.64062 17.9727 1.21875C17.6914 2.09766 17.1289 2.80078 16.3555 3.25781C17.0938 3.1875 17.832 2.97656 18.4648 2.69531C17.9727 3.43359 17.3398 4.06641 16.6367 4.59375Z"
+              fill="#292F36" />
+          </svg>
+          <svg class="interno__icon_in" width="17" height="16" viewBox="0 0 17 16" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M4.14062 16V5.48828H0.871094V16H4.14062ZM2.48828 4.08203C3.54297 4.08203 4.38672 3.20312 4.38672 2.14844C4.38672 1.12891 3.54297 0.285156 2.48828 0.285156C1.46875 0.285156 0.625 1.12891 0.625 2.14844C0.625 3.20312 1.46875 4.08203 2.48828 4.08203ZM16.3398 16H16.375V10.2344C16.375 7.42188 15.7422 5.24219 12.4375 5.24219C10.8555 5.24219 9.80078 6.12109 9.34375 6.92969H9.30859V5.48828H6.17969V16H9.44922V10.7969C9.44922 9.42578 9.69531 8.125 11.3828 8.125C13.0703 8.125 13.1055 9.67188 13.1055 10.9023V16H16.3398Z"
+              fill="#292F36" />
+          </svg>
+        </div>
+
+
+
+
+      </div>
+      <div class="pages">
+        <h2 class="footer__section">Pages</h2>
+        <a href="#" class="pages__link_brdcrmb footer__text">Home</a>
+        <a href="#" class="pages__link_brdcrmb footer__text">Project</a>
+        <a href="#" class="pages__link_brdcrmb footer__text">Blog</a>
+      </div>
+      <div class="contact">
+        <h2 class="footer__section footer__text">Contact</h2>
+        <div class="contact__address footer__text">55 East Birchwood Ave. Brooklyn, New York 11201</div>
+        <div class="contact__mail footer__text">contact@interno.com</div>
+        <div class="contact__phone footer__text">(123) 456 - 7890</div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script>
+
+    Vue.component('blog-details', {
+      props: ["itemData"],
+      data() {
+  
+        return {
+          details:
+            [
+              {
+                id:"1",
+                name: "Design sprints are great",
+                text: "Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.",
+                list: {
+                  listItem1: "Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.",
+                  listItem2: "Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.",
+                  listItem3: "Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered."
+                },
+                url: "img/details1.png"
+              },
+              {
+                id:"2",
+                name: "Design sprints are the best",
+                text: "Know that you are suffering, sit still, absorbing aliquam from your life as much as possible.Contrary to popular belief.There are many variations of passages from Lorem Ipsum, but most of them have undergone changes in one form or another, by introducing humor or random words that look even a little implausible.The embarrassing text is hidden in the middle of the text. All Lorem Ipsum generators on the internet tend to repeat predefined fragments as needed.",
+                list: {
+                  listItem1: "Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.",
+                  listItem2: "Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.",
+                  listItem3: "Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered."
+                },
+                url: "img/bath1.png"
+              },
+             
+            ],
+        };
+      },
+      methods:{
+
+      },
+
+      template:
+        `
+  <div  class="component">
+  <div class="quotes">
+      <div class="quotes__data">
+        <h1 class="quotes__data_logo">“</h1>
+        <h1 class="quotes__data_text">The details are not the details.</h1>
+        <h1 class="quotes__data_text">They make the design.</h1>
+      </div>
+  </div>
+  
+  <div class="blog-details" v-for="item in details" :key="item.id">
+    <div v-if= "item.id === itemData.id">
+    <h1 class="blog-details__title" >{{ item.name }}</h1>
+    <p class="blog-details__text" > {{ item.text }}</p>
+    <ol class="blog-details__itemList"  >
+      <li class="blog-details__itemList_item" >{{item.list.listItem1}}</li>
+      <li class="blog-details__itemList_item" >{{item.list.listItem2}}</li>
+      <li class="blog-details__itemList_item" >{{item.list.listItem3}}</li>
+    </ol>
+    <img class="details__img" :src= item.url></img>
+    <p class="blog-details__text" > {{ item.text }}</p> 
+  </div>
+  </div>
+</div>
+  `,
+    });
+
+    Vue.component('blog', {
+      data(){ 
+        return {
+          visible: false,
+        }
+      },
+      props: ["itemData"],
+      methods: {
+        show(){
+          this.visible=!this.visible;
+        }
+        
+      },
+
+      template:
+        `   
+      <div @click="show()">
+        <h1 class=" blog__list__item_title">{{ itemData.blogName }}</h1>
+        <img class=" blog__list__item_img" :src= itemData.url  alt="img">
+        <div class=" blog__list__item_info">
+          <h3 class=" blog__list__item_info_left inf">{{ itemData.blogInfo }}</h3>
+          <h3 class=" blog__list__item_info_right inf">Interior / Home / Decore</h3> 
+        </div>
+        <h2 class="blog__list__item_description">{{ itemData.blogText }}</h2>
+        <blog-details v-show="visible" :item-data="itemData" ></blog-details>
+      </div>
+      `,
+    });
+
+
+
+    Vue.component('blog-list', {
+      // props: {},
+      data() {
+        return {
+          sortTag: "",
+          blogs: [
+            { id: '1', tag: 'kitchen', blogName: 'Let’s Get Solution for Building Construction Work', url: 'img/kitchen.png', blogInfo: '26 December,2022', blogText: "Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or randomised words which don't look even slightly believable .Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary."},
+            { id: '2', tag: 'bathroom', blogName: "Let's find a solution for the construction work in the building", url: 'img/bath2.png', blogInfo: '26 December,2022', blogText: "Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or randomised words which don't look even slightly believable .Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary."}
+          ],
+          reserve: [],
+          toggle1: false,
+          toggle2: false,
+        };
+      },
+
+      methods: {
+        toggleUse1(){
+
+          if (!this.toggle1) {
+              this.toggle1 = !this.toggle1;
+              this.toggle2 = !this.toggle1;
+            } else {
+              this.toggle1 = this.toggle1;
+              this.toggle2 = !this.toggle1;
+            }
+
+        },
+        toggleUse2(){
+
+          if (!this.toggle2) {
+              this.toggle2 = !this.toggle2;
+              this.toggle1 = !this.toggle2;
+            } else {
+              this.toggle2 = this.toggle2;
+              this.toggle1 = !this.toggle2;
+            }
+        },
+     
+
+        filterBlogs() {
+          if (this.reserve.length == 0) {
+            this.reserve = Array.from(JSON.parse(JSON.stringify(this.blogs)));
+
+            switch (this.sortTag) {
+              case "kitchen":
+                this.blogs =this.blogs.filter(item => item.tag === this.sortTag);
+              case "bathroom":
+                this.blogs =this.blogs.filter(item => item.tag === this.sortTag);
+            }
+          }else{
+            this.blogs = Array.from(JSON.parse(JSON.stringify(this.reserve)));
+
+            switch (this.sortTag) {
+              case "kitchen":
+                this.blogs = Array.from(JSON.parse(JSON.stringify(this.blogs)).filter(item => item.tag === this.sortTag));
+              case "bathroom":
+                this.blogs = Array.from(JSON.parse(JSON.stringify(this.blogs)).filter(item => item.tag === this.sortTag));
+            }
+          }
+
+
+
+          /* switch (this.sortTag) {
+            case "kitchen":
+              this.result = Array.from(JSON.parse(JSON.stringify(this.blogs)).filter(item => item.tag === this.sortTag));
+            case "bedroom":
+              this.result = Array.from(JSON.parse(JSON.stringify(this.blogs)).filter(item => item.tag === this.sortTag));
+            // case "":
+            //   this.result = Array.from(JSON.parse(JSON.stringify(this.blogs)));
+          } */
+
+        }
+
+      },
+
+      template: `
+    <div class="blog__list_elem">
+      
+
+      <div class=" blog__list">
+        <ol style="list-style-type: none">
+          <blog v-for="item in blogs" :item-data="item" :key= "item.id" class="blog__list__item" ></blog>
+        </ol>
+      </div>
+
+      <div class="btns">
+        <h1 class="" >Tags</h1>
+        <div class="tags__button">
+          <button @click="sortTag='kitchen', filterBlogs(), toggleUse1()" class="tags__button_btn" :class="{btnActiv: toggle1}">Kitchen</button>
+          <button @click="sortTag='bathroom', filterBlogs(), toggleUse2()" class="tags__button_btn" :class="{btnActiv: toggle2}">Bathroom</button>
+          </div>
+        <div class="tags__button">
+          <button class="tags__button_btn">Building</button>
+          <button class="tags__button_btn">Architecture</button>
+          </div>
+        <div class="tags__button">
+          <button class="tags__button_btn">Kitchen Planning</button><button
+             class="tags__button_btn">Bedroom</button></div>
+
+    </div>
+    </div>
+    `,
+    });
+
+
+
+    new Vue({
+      el: '#app',
+      data: {
+
+      },
+
+
+
+    });
+
+
+
+    /* <div class="tags__button">
+          <button @click="sortTag='kitchen', filterBlogs()" class="tags__button_btn">Kitchen</button>
+          <button @click="sortTag='bedroom', filterBlogs()" class="tags__button_btn">Bedroom</button>
+          </div>
+        <div class="tags__button">
+          <button class="tags__button_btn">Building</button>
+          <button class="tags__button_btn">Architecture</button>
+          </div>
+        <div class="tags__button">
+          <button class="tags__button_btn">Kitchen Planning</button><button
+             class="tags__button_btn">Bedroom</button></div> */
+
+
+    /* <ol style="list-style-type: none">
+           <li v-for="blog in blogs" :key="blog.id">
+             <h1>{{ this.blogName }}</h1>
+                 <img :src= this.url  alt="img">
+                 <div>
+                 <h3>{{ this.blogInfo }}</h3>
+                 <h3>Interior / Home / Decore</h3> 
+               </div>
+               <h2>{{ this.blogText }}</h2>
+           </li>
+       </ol>  */
+
+
+
+
+
+
+    /* <ol style="list-style-type: none">
+            <li v-for="blog in blogs" :key="blog.id">
+              <h1>{{blog.blogName}}</h1>
+              <img :src=blog.url alt="img">
+              
+            </li>
+        </ol> 
+         */
+
+/* <div class="blog-details" v-for="item in details" :key="item.id">
+    <h1 class="blog-details__title" >{{ item.name }}</h1>
+    <p class="blog-details__text" > {{ item.text }}</p>
+    <ol class="blog-details__itemList"  >
+      <li class="blog-details__itemList_item" >{{item.list.listItem1}}</li>
+      <li class="blog-details__itemList_item" >{{item.list.listItem2}}</li> =====================================================
+      <li class="blog-details__itemList_item" >{{item.list.listItem3}}</li>
+    </ol>
+    <img class="" :src= item.url></img>
+    <p class="blog-details__text" > {{ item.text }}</p> 
+  
+  </div> */
+
+
+
+    /* <h1 class=" blog__list__item_title">{{ blog.blogName }}</h1>
+                <img class=" blog__list__item_img" :src= blog.url  alt="img">
+                <div class=" blog__list__item_info">
+                  <h3 class=" blog__list__item_info_left inf">{{ blog.blogInfo }}</h3>
+                  <h3 class=" blog__list__item_info_right inf">Interior / Home / Decore</h3> 
+                </div>
+                <h2 class="blog__list__item_description">{{ blog.blogText }}</h2> */
+
+
+
+
+
+    /*
+    <div class="quotes">
+          <div class="quotes__data">
+            <h1 class="quotes__data_logo">“</h1>
+            <h1 class="quotes__data_text">The details are not the details.</h1>
+            <h1 class="quotes__data_text">They make the design.</h1>
+          </div>
+        </div> */
+
+
+
+
+  </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <body>
+
+  <div class="lines center">
+    <svg width="1" height="3145" viewBox="0 0 1 3145" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <line x1="0.500122" y1="7.48501e-08" x2="0.500082" y2="3144.64" stroke="#E6E6E6" />
+    </svg>
+    <svg width="1" height="3145" viewBox="0 0 1 3145" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <line x1="0.500122" y1="7.48501e-08" x2="0.500082" y2="3144.64" stroke="#E6E6E6" />
+    </svg>
+    <svg width="1" height="3145" viewBox="0 0 1 3145" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <line x1="0.500122" y1="7.48501e-08" x2="0.500082" y2="3144.64" stroke="#E6E6E6" />
+    </svg>
+    <svg width="1" height="3145" viewBox="0 0 1 3145" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <line x1="0.500122" y1="7.48501e-08" x2="0.500082" y2="3144.64" stroke="#E6E6E6" />
+    </svg>
+
+  </div>
+
+
+  <div id="app" class="main center">
+    <div class="header center">
+      <div class="header__left">
+        <div class="header__left_logo">
+          <a href="#" class=""><svg class="logo" width="34" height="34" viewBox="0 0 34 34" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 34.0003H13.4588V24.499C13.4588 22.4853 15.0898 20.8543 17.1035 20.8543C19.1172 20.8543 20.7482 22.4853 20.7482 24.499V34.0003H33.9975V0C15.2211 0 0 15.2211 0 34.0003Z"
+                fill="#CDA274" />
+            </svg></a>
+        </div>
+
+
+        <div class="header__left_text">Interno</div>
+      </div>
+      <div class="header__right">
+        <a href="#" class="header__right_link">Home</a>
+        <a href="#" class="header__right_link">Project</a>
+        <a href="#" class="header__right_link">Blog</a>
+      </div>
+    </div>
+
+
+    <div class="banner ">
+      <img src="img/banner.jpg" alt="banner">
+    </div>
+
+    <div class="details">
+      <div id="app" class="blog__list">
+        <blog-list></blog-list>
+      </div>
+    </div>
+
+
+    <div class="footer center">
+      <div class="interno">
+        <div class="interno__head">
+          <div class="interno_logo">
+            <a href="#" class=""><svg class="logo" width="34" height="34" viewBox="0 0 34 34" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0 34.0003H13.4588V24.499C13.4588 22.4853 15.0898 20.8543 17.1035 20.8543C19.1172 20.8543 20.7482 22.4853 20.7482 24.499V34.0003H33.9975V0C15.2211 0 0 15.2211 0 34.0003Z"
+                  fill="#CDA274" />
+              </svg>
+            </a>
+          </div>
+          <div class="interno_text footer__text">Interno</div>
+        </div>
+        <span class="interno__span">It is a long established fact that a reader will be distracted lookings.</span>
+        <div class="interno__icon">
+          <svg class="interno__icon_tweet" width="19" height="16" viewBox="0 0 19 16" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M16.6367 4.59375C16.6367 4.76953 16.6367 4.91016 16.6367 5.08594C16.6367 9.97266 12.9453 15.5625 6.16016 15.5625C4.05078 15.5625 2.11719 14.9648 0.5 13.9102C0.78125 13.9453 1.0625 13.9805 1.37891 13.9805C3.10156 13.9805 4.68359 13.3828 5.94922 12.3984C4.33203 12.3633 2.96094 11.3086 2.50391 9.83203C2.75 9.86719 2.96094 9.90234 3.20703 9.90234C3.52344 9.90234 3.875 9.83203 4.15625 9.76172C2.46875 9.41016 1.20312 7.93359 1.20312 6.14062V6.10547C1.69531 6.38672 2.29297 6.52734 2.89062 6.5625C1.87109 5.89453 1.23828 4.76953 1.23828 3.50391C1.23828 2.80078 1.41406 2.16797 1.73047 1.64062C3.55859 3.85547 6.30078 5.33203 9.35938 5.50781C9.28906 5.22656 9.25391 4.94531 9.25391 4.66406C9.25391 2.625 10.9062 0.972656 12.9453 0.972656C14 0.972656 14.9492 1.39453 15.6523 2.13281C16.4609 1.95703 17.2695 1.64062 17.9727 1.21875C17.6914 2.09766 17.1289 2.80078 16.3555 3.25781C17.0938 3.1875 17.832 2.97656 18.4648 2.69531C17.9727 3.43359 17.3398 4.06641 16.6367 4.59375Z"
+              fill="#292F36" />
+          </svg>
+          <svg class="interno__icon_in" width="17" height="16" viewBox="0 0 17 16" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M4.14062 16V5.48828H0.871094V16H4.14062ZM2.48828 4.08203C3.54297 4.08203 4.38672 3.20312 4.38672 2.14844C4.38672 1.12891 3.54297 0.285156 2.48828 0.285156C1.46875 0.285156 0.625 1.12891 0.625 2.14844C0.625 3.20312 1.46875 4.08203 2.48828 4.08203ZM16.3398 16H16.375V10.2344C16.375 7.42188 15.7422 5.24219 12.4375 5.24219C10.8555 5.24219 9.80078 6.12109 9.34375 6.92969H9.30859V5.48828H6.17969V16H9.44922V10.7969C9.44922 9.42578 9.69531 8.125 11.3828 8.125C13.0703 8.125 13.1055 9.67188 13.1055 10.9023V16H16.3398Z"
+              fill="#292F36" />
+          </svg>
+        </div>
+
+
+
+
+      </div>
+      <div class="pages">
+        <h2 class="footer__section">Pages</h2>
+        <a href="#" class="pages__link_brdcrmb footer__text">Home</a>
+        <a href="#" class="pages__link_brdcrmb footer__text">Project</a>
+        <a href="#" class="pages__link_brdcrmb footer__text">Blog</a>
+      </div>
+      <div class="contact">
+        <h2 class="footer__section footer__text">Contact</h2>
+        <div class="contact__address footer__text">55 East Birchwood Ave. Brooklyn, New York 11201</div>
+        <div class="contact__mail footer__text">contact@interno.com</div>
+        <div class="contact__phone footer__text">(123) 456 - 7890</div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script>
+
+    Vue.component('blog-details', {
+      props: {},
+
+      data() {
+        return {
+          details:
+            [
+              {
+                name: "Design sprints are great",
+                text: "Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.",
+                list: {
+                  listItem1: "Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.",
+                  listItem2: "Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.",
+                  listItem3: "Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered."
+                },
+                url: "img/details1.png"
+              }
+            ],
+        };
+      },
+
+      template:
+        `
+  <div>
+  <div class="quotes">
+      <div class="quotes__data">
+        <h1 class="quotes__data_logo">“</h1>
+        <h1 class="quotes__data_text">The details are not the details.</h1>
+        <h1 class="quotes__data_text">They make the design.</h1>
+      </div>
+  </div>
+  
+  <div class="blog-details" v-for="item in details">
+    <h1 class="blog-details__title" >{{ item.name }}</h1>
+    <p class="blog-details__text" > {{ item.text }}</p>
+    <ol class="blog-details__itemList"  >
+      <li class="blog-details__itemList_item" >{{item.list.listItem1}}</li>
+      <li class="blog-details__itemList_item" >{{item.list.listItem2}}</li>
+      <li class="blog-details__itemList_item" >{{item.list.listItem3}}</li>
+    </ol>
+    <img class="" :src= item.url></img>
+    <p class="blog-details__text" > {{ item.text }}</p> 
+  </div>
+</div>
+  `,
+    });
+
+    Vue.component('blog', {
+      props: ["itemData"],
+
+      template:
+        `   
+      <div>
+        <h1 class=" blog__list__item_title">{{ itemData.blogName }}</h1>
+        <img class=" blog__list__item_img" :src= itemData.url  alt="img">
+        <div class=" blog__list__item_info">
+          <h3 class=" blog__list__item_info_left inf">{{ itemData.blogInfo }}</h3>
+          <h3 class=" blog__list__item_info_right inf">Interior / Home / Decore</h3> 
+        </div>
+        <h2 class="blog__list__item_description">{{ itemData.blogText }}</h2>
+        <blog-details/>
+      </div>
+      `,
+    });
+
+
+
+    Vue.component('blog-list', {
+      // props: {},
+      data() {
+        return {
+          search: "",
+          blogs: [
+            { id: '1', tag: 'kitchen', blogName: 'Let’s Get Solution for Building Construction Work', url: 'img/kitchen.png', blogInfo: '26 December,2022', blogText: "Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or randomised words which don't look even slightly believable .Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary." },
+            { id: '2', tag: 'bedroom', blogName: "Let's find a solution for the construction work in the building", url: 'img/hall.png', blogInfo: '26 December,2022', blogText: "Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or randomised words which don't look even slightly believable .Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary." }
+          ],
+        };
+      },
+      computed: 
+      {
+        
+
+      },
+      methods: {
+        filterKitchen() {
+          this.blogs = this.blogs;
+          var newArray = this.blogs.filter(function (el) {
+            return el.tag === 'kitchen';
+          });
+     
+           this.blogs = newArray;
+        },
+        filterBedroom() {
+          this.blogs = this.blogs;
+          var newArray = this.blogs.filter(function (el) {
+            return el.tag === 'bedroom';
+          });
+           this.blogs = newArray;
+        },
+        
+      },
+
+        template: `
+    <div class="blog__list_elem">
+      
+
+      <div class=" blog__list">
+        <ol style="list-style-type: none">
+          <blog v-for="item in blogs" :item-data="item" :key= "item.id" class=" blog__list__item"></blog>
+        </ol>
+      </div>
+
+      <div class="btns">
+        <h1 class="tags">Tags</h1>
+        <div class="tags__button">
+          <button @click="filterKitchen()" class="tags__button_btn">Kitchen</button>
+          <button @click="filterBedroom()" class="tags__button_btn">Bedroom</button>
+          </div>
+        <div class="tags__button">
+          <button class="tags__button_btn">Building</button>
+          <button class="tags__button_btn">Architecture</button>
+          </div>
+        <div class="tags__button">
+          <button class="tags__button_btn">Kitchen Planning</button><button
+             class="tags__button_btn">Bedroom</button></div>
+      </div>
+
+    </div>
+    `,
+      });
+
+
+
+    new Vue({
+      el: '#app',
+      data: {},
+
+    });
+
+
+
+
+    /* <ol style="list-style-type: none">
+           <li v-for="blog in blogs" :key="blog.id">
+             <h1>{{ this.blogName }}</h1>
+                 <img :src= this.url  alt="img">
+                 <div>
+                 <h3>{{ this.blogInfo }}</h3>
+                 <h3>Interior / Home / Decore</h3> 
+               </div>
+               <h2>{{ this.blogText }}</h2>
+           </li>
+       </ol>  */
+
+
+
+
+
+
+    /* <ol style="list-style-type: none">
+            <li v-for="blog in blogs" :key="blog.id">
+              <h1>{{blog.blogName}}</h1>
+              <img :src=blog.url alt="img">
+              
+            </li>
+        </ol> 
+         */
+
+
+
+
+
+    /* <h1 class=" blog__list__item_title">{{ blog.blogName }}</h1>
+                <img class=" blog__list__item_img" :src= blog.url  alt="img">
+                <div class=" blog__list__item_info">
+                  <h3 class=" blog__list__item_info_left inf">{{ blog.blogInfo }}</h3>
+                  <h3 class=" blog__list__item_info_right inf">Interior / Home / Decore</h3> 
+                </div>
+                <h2 class="blog__list__item_description">{{ blog.blogText }}</h2> */
+
+
+
+
+
+    /* 
+    <div class="quotes">
+          <div class="quotes__data">
+            <h1 class="quotes__data_logo">“</h1>
+            <h1 class="quotes__data_text">The details are not the details.</h1>
+            <h1 class="quotes__data_text">They make the design.</h1>
+          </div>
+        </div> */
+
+
+
+
+  </script>
+</body> -->
